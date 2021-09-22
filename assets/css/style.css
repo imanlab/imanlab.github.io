@@ -52,6 +52,10 @@ section li {
     font-size: 85%;
 }
 
+.text-underline {
+    text-decoration: underline;
+}
+
 /*
  * Add class .alternate-bg to a series of element to make
  * one every two of them have a background slightly darker than white.
