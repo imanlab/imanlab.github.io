@@ -1,0 +1,437 @@
+/* GENERAL */
+
+:root {
+    /*
+     * These are glboal variables, used in various elements.
+     * Change them here to affect the entire style.
+     */
+    --color-black: #222222;
+    --color-whitish: #F9F9F9;
+    --color-primary: #346beb;
+    --color-secondary: #ffc800;
+    --font-family-roboto: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-montserrat: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html, body {
+    font-family: var(--font-family-montserrat);
+    color: var(--color-black);
+}
+
+a {
+    color: var(--color-primary);
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+.limit-vertical {
+    max-height: 80vh;
+}
+
+
+
+/* HELPER CLASSES */
+/*
+ * These are classes which can be used on any element.
+ */
+
+.text-highlight {
+    color: var(--color-primary);
+}
+
+.text-smallcaps {
+    font-variant: small-caps;
+}
+
+.text-small {
+    font-size: 85%;
+}
+
+/*
+ * Add class .alternate-bg to a series of element to make
+ * one every two of them have a background slightly darker than white.
+ */
+.alternate-bg:nth-of-type(even) {
+    background-color: var(--color-whitish);
+}
+
+/* Change the color of striped tables when inside an .alternate-bg element */
+.alternate-bg:nth-of-type(even) .table-striped>tbody>tr:nth-of-type(odd) {
+    --bs-table-accent-bg: white;
+}
+
+
+
+
+/* BUTTON */
+
+.btn.btn-primary {
+    color: var(--color-whitish);
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.btn.btn-primary:hover {
+    color: var(--color-black);
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+/*
+ * Add a little more space inside a button.
+ */
+.btn.btn-spaced {
+    padding: 1.25rem 2.5rem;
+}
+
+
+
+
+/* NAVBAR */
+
+nav.navbar .navbar-nav .nav-item {
+    margin-right: 1rem;
+}
+
+nav.navbar .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+nav.navbar .navbar-nav a.nav-link {
+    color: var(--color-whitish);
+    transition: transform 0.2s;
+}
+
+nav.navbar .navbar-nav a.nav-link:hover {
+    color: var(--color-secondary);
+    transform: scale(1.17)
+}
+
+nav.navbar .navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+
+
+/* HEADER */
+
+header.masthead {
+    padding-top: 10.5rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    color: var(--color-whitish);
+    /*
+     * Blend with black (0, 0, 0) to darken the image, blend with white (255, 255, 255) to lighten it.
+     * Change the alpha value (fourth number) from 0 to 1 to control the strength of the darkening/lightening.
+     */
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("https://intmanlab.github.io/photos/setup.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: left;
+    background-size: cover;
+}
+
+
+@media (min-width: 768px) {
+    header.masthead {
+        background-position: center center;
+    }
+}
+
+header.masthead .masthead-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+
+    display: inline-flex;
+    flex-direction: column;
+}
+
+header.masthead .masthead-subheading {
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 2rem;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+    header.masthead {
+      padding-top: 17rem;
+      padding-bottom: 8rem;
+    }
+    
+    header.masthead .masthead-heading {
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 4.5rem;
+        margin-bottom: 4rem;
+    }
+
+    header.masthead .masthead-subheading {
+      font-size: 2.25rem;
+      line-height: 3rem;
+      margin-bottom: 5rem;
+    }
+}
+
+
+
+
+
+/* SECTIONS */
+
+section.page-section {
+    padding: 2rem 0;
+}
+
+.heading-container {
+    margin: 5rem 0 4rem 0;
+}
+
+section.page-section .section-heading {
+    font-weight: 700;
+}
+
+section.page-section .section-subheading {
+    font-family: var(--font-family-roboto);
+    font-size: 1rem;
+    font-style: italic;
+}
+
+
+
+
+
+/* PORTFOLIO */
+
+.portfolio .portfolio-item .portfolio-link {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--color-secondary);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+}
+
+.portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    font-size: 1.25rem;
+    color: var(--color-whitish);
+}
+
+.portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+    opacity: 1;
+}
+
+.portfolio .portfolio-item .portfolio-caption {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.caption-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.caption-subheading {
+    font-style: italic;
+    font-family: var(--font-family-roboto);
+}
+
+
+
+
+
+/* PEOPLE */
+
+.person {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.person img {
+    width: 14rem;
+    height: 14rem;
+    border: 0.5rem solid var(--color-whitish);
+    object-fit: cover;
+}
+
+.person h4, .person .h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.btn-social {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 100%;
+}
+
+.btn-social.dark {
+    color: var(--color-whitish);
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-social:hover, .btn-social.dark:hover {
+    color: var(--color-black);
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+
+
+
+/* MAP */
+
+.map {
+    width: 100%;
+    height: 80vh;
+}
+
+
+
+
+/* MINI CV */
+
+.mini-cv .img-container img {
+    border-radius: 15%;
+    width: 100%;
+}
+
+.mini-cv .img-container, .mini-cv .details-container {
+    margin-bottom: 2rem;
+}
+
+.mini-cv .details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mini-cv .details-container>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mini-cv .details-container>div>div {
+    margin: 0 1rem 0 0;
+}
+
+.mini-cv .details-container hr {
+    margin: 0.4rem 0;
+}
+
+
+
+
+/* BUSINESS CARD */
+
+.business-card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.business-card {
+    display: inline-flex;
+    flex-direction: column;
+    background: var(--color-black);
+    color: var(--color-whitish);
+    padding: 2rem;
+    border-radius: 2rem;
+
+    /* Slightly change font size to adapt to the screen size. */
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.business-card a {
+    color: var(--color-primary);
+}
+
+.business-card a:hover {
+    color: var(--color-secondary);
+}
+
+.business-card .details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.business-card .details .img-container {
+    display: inline-block;
+    width: 8rem;
+    margin-right: 1rem;
+}
+
+.business-card .details .contacts-container {
+    display: inline-block;
+    width: 75%;
+}
+
+.business-card .details .contacts-container>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.business-card .details .contacts-container>div>div {
+    margin: 0 0.5rem 0.5rem 0;
+}
+
+.business-card .img-container img {
+    width: 100%;
+}
+
+.business-card .social {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+    color: var(--color-whitish);
+    padding: 3rem 1rem 0 1rem;
+}
+
+footer a {
+    color: var(--color-primary);
+}
+
+footer a:hover {
+    color: var(--color-secondary);
+}
+
+footer .row div {
+    margin-bottom: 2em;
+}
+
+footer .contact-table td {
+    padding: 0.2rem;
+}
