@@ -164,23 +164,55 @@
         </div>
     </section>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/assets/js/bib-list-min.js"></script>
+    <link href="/assets/css/bib-list.css" rel="stylesheet" type="text/css">
+    <style>
+      /* Use this values to change the size of each publication item in the graph for this page only. */
+      :root {
+          --min-pub-width: 60px;
+          --max-pub-width: 100px;
+          --pub-height: 12px;
+      }
+    </style>
     <section class="page-section alternate-bg">
+        <div class="heading-container text-center">
+            <h2 class="section-heading text-uppercase">Selected publications</h2>
+        </div>
         <div class="container">
-            <h3>Selected publications</h3>
-            <ol>
-                <li>
-                    Co-author in F. Firouzi et al., "Harnessing the Power of Smart and Connected Health to Tackle COVID-19: IoT, AI, Robotics, and Blockchain for a Better World," in IEEE Internet of Things Journal, doi: 10.1109/JIOT.2021.3073904.
-                </li>
-                <li>
-                    
-                    Z. Talebpour and A. Martinoli. "Adaptive Risk-Based Replanning for Social Robots with Local Perception." IEEE Robotics and Automation Letters (RAL), 4, 2019.
-                </li>
-                <li>
-                    ...
-                </li>
-            </ol>
+            <pre id="bibtex">
+                @ARTICLE{9406879,
+                    author={Firouzi, Farshad and Farahani, Bahar and Daneshmand, Mahmoud and Grise, Kathy and Song, Jaeseung and Saracco, Roberto and Wang, Lucy Lu and Lo, Kyle and Angelov, Plamen and Soares, Eduardo and Loh, Po-Shen and Talebpour, Zeynab and Moradi, Reza and Goodarzi, Mohsen and Ashraf, Haleh and Talebpour, Mohammad and Talebpour, Alireza and Romeo, Luca and Das, Rupam and Heidari, Hadi and Pasquale, Dana and Moody, James and Woods, Chris and Huang, Erich S. and Barnaghi, Payam and Sarrafzadeh, Majid and Li, Ron and Beck, Kristen L. and Isayev, Olexandr and Sung, Nakmyoung and Luo, Alan},
+                    journal={IEEE Internet of Things Journal}, 
+                    title={Harnessing the Power of Smart and Connected Health to Tackle COVID-19: IoT, AI, Robotics, and Blockchain for a Better World}, 
+                    year={2021},
+                    volume={8},
+                    number={16},
+                    pages={12826-12846},
+                    doi={10.1109/JIOT.2021.3073904},
+                    url={https://doi.org/10.1109/JIOT.2021.3073904}
+                }
+
+            </pre>
+            <div id="bib-publication">
+                <div class="bibchart-container">
+                    <div class="bibchart">
+                        
+                    </div>
+                </div>
+                <div class="legend">
+    
+                </div>
+                <div class="table-responsive limit-vertical text-small">
+                    <table class="table"></table>
+                </div>
+            </div>
         </div>
     </section>
+    <script>
+        // Change the "visualization" parameter to enable or disable the graph.
+        bibtexify("#bibtex", "bib-publication", {"visualization": false});
+    </script>
 
     <section class="page-section alternate-bg">
         <div class="container">
