@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IntManLab - Giorgio Bonvicini</title>
+    <title>IntManLab - Manu Harikrishnan Nair</title>
     
     <!--Favicons-->
     <link rel="/assets/favicons/apple-touch-icon.png">
@@ -51,60 +51,75 @@
     <!--Mini CV-->
     <section class="page-section alternate-bg">
         <div class="heading-container text-center">
-            <h2 class="section-heading text-uppercase">Giorgio Bonvicini</h2>
+            <h2 class="section-heading text-uppercase">Mr Manu Harikrishnan Nair</h2>
+            <!--<h3 class="section-subheading text-muted">Subtitle here</h3>-->
         </div>
         <div class="container">
             <div class="mini-cv row justify-content-center align-items-center">
                 <div class="col-lg-3 col-md-4 col-10 img-container">
-                    <img src="/assets/img/team/giorgio_bonvicini.png" alt="Giorgio Bonvicini">
+                    <img src="/assets/img/team/manu_harikrishnan_nair.png" alt="John Smith">
                 </div>
                 <div class="col-md-8 col-12 details-container">
                     <div>
                         <div><i class="fas fa-lg fa-user" title="Role"></i></div>
                         <div>
-                            Working on my master thesis
+                            Working on: In-orbit robotic assembly of a Large-Aperture Space Telescope
                         </div>
                     </div>
                     <hr/>
                     <div>
                         <div><i class="fas fa-lg fa-calendar" title="Duration"></i></div>
                         <div>
-                            September 2021 - (exp.) February 2022
+                            November 2019 - present
                         </div>
                     </div>
                     <hr/>
                     <div>
                         <div><i class="fas fa-lg fa-graduation-cap" title="Education"></i></div>
                         <div>
-                            Bachelor's degree in Mechanical Engineering @ Politecnhic Univeristy of Milan
+                            M.Sc. in Mechatronics @ University of Glasgow
                         </div>
                     </div>
                     <hr/>
                     <div>
                         <div><i class="fas fa-lg fa-star" title="Interests"></i></div>
                         <div>
-                            Mechanical systems dyanmics, Control systems, Robotic systems, Deep learning
+                            Robotics, Space Systems, System Dynamics, Control Theory, Mission Planning
                         </div>
                     </div>
                     <hr/>
                     <div>
                         <div><i class="fas fa-lg fa-at" title="E-mail"></i></div>
                         <div>
-                            <a href="mailto:25933576@students.lincoln.ac.uk">25933576@students.lincoln.ac.uk</a>
+                            <a href="mailto:18710796@students.lincoln.ac.uk">18710796@students.lincoln.ac.uk</a>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div><i class="fas fa-lg fa-phone" title="Telephone"></i></div>
+                        <div>
+                            <a href="tel:+447587582828">+44 7587 582828</a>
                         </div>
                     </div>
                     <hr/>
                     <div>
                         <div><i class="fab fa-lg fa-linkedin" title="Linkedin"></i></div>
                         <div>
-                            <a href="https://www.linkedin.com/in/giorgio-bonvicini/">Linkedin Profile</a>
+                            <a href="https://www.linkedin.com/in/manu-nair-059951140/">Linkedin Profile</a>
                         </div>
                     </div>
                     <hr/>
                     <div>
                         <div><i class="fab fa-lg fa-github" title="Github"></i></div>
                         <div>
-                            <a href="https://github.com/GioBonvi">@GioBonvi</a>
+                            <a href="https://github.com/Manu1503/ManU">@Manu1503</a>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div><i class="fas fa-lg fa-globe" title="Website"></i></div>
+                        <div>
+                            <a href="https://johndoe.me">Personal website</a>
                         </div>
                     </div>
                 </div>
@@ -112,17 +127,130 @@
         </div>
     </section>
 
+    <!--OTHER CONTENT GOES HERE-->
+
+    <!--Example: a text-only section-->
+    <!--
     <section class="page-section alternate-bg">
         <div class="heading-container text-center">
-            <h3 class="section-heading text-uppercase">Short biography</h3>
+            <h3 class="section-heading text-uppercase">Some text content</h3>
+            <h4 class="section-subheading text-muted">Possibly with a subheading</h4>
         </div>
         <div class="container">
             <p class="text-justify">
-                I am a master Mechanical Engineering student at the Politechnic University of Milan, where I got my Bachelor's degree in 2019. After succesfully completing my master's exams (specializing in Robotics and Mechatronics) I joined IML in Lincoln to work on my master thesis for six months.<br>
-                I've always loved the topic of Robotics as it brings together my academic background and my passion for Computer Science. Recently I've been exploring the fields of Machine Learning and Deep Learning.
+                This is the content.
             </p>
         </div>
     </section>
+    -->
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/assets/js/bib-list-min.js"></script>
+    <link href="/assets/css/bib-list.css" rel="stylesheet" type="text/css">
+    <style>
+      /* Use this values to change the size of each publication item in the graph for this page only. */
+      :root {
+          --min-pub-width: 60px;
+          --max-pub-width: 100px;
+          --pub-height: 12px;
+      }
+    </style>
+    <section class="page-section alternate-bg">
+        <div class="heading-container text-center">
+            <h2 class="section-heading text-uppercase">Publications</h2>
+            <h3 class="section-subheading text-muted">A curated list of my publications.</h3>
+        </div>
+        <div class="container">
+            <!--Replace these placeholder publications with the ones you want to display.-->
+            <pre id="bibtex">
+                @INPROCEEDINGS {Gregory2021,
+                    author    = "Joe Gregory and Manu H. Nair and Gianmaria Bullegas and Chakravarthini M. Saaj",
+                    title     = "Using Semantic Systems Engineering Techniques to Verify the Large Aperture Space Telescope Mission - Current Status",
+                    booktitle = "Model Based Space Systems and Software Engineering (MBSE2021)",
+                    year      = "2021",
+                    address   = "Amsterdam, Netherlands",
+                    month     = "sep",
+                    url       = "https://indico.esa.int/event/386/contributions/6243/attachments/4281/6391/1435%20-%20using%20semantic%20systems%20engineering%20techniques%20to%20verify%20the%20large%20aperture%20space%20telescope%20mission%20%E2%80%93%20current%20status.pdf"
+                }
+                @article{Mohamed2020,
+                    doi = {10.15406/aaoaj.2020.04.00112},
+                    url = {https://doi.org/10.15406/aaoaj.2020.04.00112},
+                    year = {2020},
+                    month = jul,
+                    publisher = {{MedCrave} Group,  {LLC}},
+                    volume = {4},
+                    number = {3},
+                    pages = {97--114},
+                    author = {Amr Mohamed and Chakravarthini Saaj and Asma Seddaoui and Manu H. Nair},
+                    title = {Linear controllers for free-flying and controlledfloating space robots: a new perspective},
+                    journal = {Aeronautics and Aerospace Open Access Journal}
+                }
+                @INPROCEEDINGS {,
+                    author    = "Manu H. Nair and Chakravarthini M. Saaj and Amir Ghalamzan E.",
+                    title     = "On Robotic in-Orbit Assembly of Large Aperture Space Telescopes",
+                    booktitle = "Workshop on Robotic In-Situ Servicing, Assembly and Manufacturing, 2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2020)",
+                    year      = "2020",
+                    address   = "Las Vegas, US",
+                    month     = "oct"
+                }
+                @INPROCEEDINGS {,
+                    author    = "Manu H. Nair and Chakravarthini M. Saaj and Sam Adlen and Amir Ghalamzan E. and Steve Eckersley",
+                    title     = "Advances in Robotic in-Orbit Assembly of Large Aperture Space Telescopes",
+                    booktitle = "Proc. 15th International Symposium in Artificial Intelligence, Robotics and Automation in Space (i-SAIRAS 2020)",
+                    year      = "2020",
+                    address   = "Pasadena, US",
+                    month     = "oct",
+                    url       = "https://www.hou.usra.edu/meetings/isairas2020fullpapers/pdf/5012.pdf"
+                }
+                @INPROCEEDINGS {,
+                    author    = "Manu H. Nair and Chakravarthini M. Saaj and Amir Ghalamzan E and, Angadh Nanjangud and Steve Eckersley and Paolo Bianco",
+                    title     = "In-Space Robotic Assembly and Servicing of High-Value Infrastructure",
+                    booktitle = "71st International Astronautical Congress",
+                    year      = "2020",
+                    month     = "oct",
+                    url       = "https://iafastro.directory/iac/paper/id/59387/summary/"
+                }
+                @inproceedings{Nair2020,
+                    doi = {10.1007/978-3-030-63486-5_15},
+                    url = {https://doi.org/10.1007/978-3-030-63486-5_15},
+                    year = {2020},
+                    publisher = {Springer International Publishing},
+                    pages = {128--133},
+                    author = {Manu H. Nair and Chakravarthini M. Saaj and Amir G. Esfahani},
+                    title = {Modelling and Control of an End-Over-End Walking Robot},
+                    booktitle = {Towards Autonomous Robotic Systems}
+                }
+                @inproceedings{HarikrishnanNair2018,
+                    doi = {10.1109/iros.2018.8594129},
+                    url = {https://doi.org/10.1109/iros.2018.8594129},
+                    year = {2018},
+                    month = oct,
+                    publisher = {{IEEE}},
+                    author = {Manu Harikrishnan Nair and Tarush Ghanshsyam Singh and Gunjan Chourasia and Amrit Das and Akarsh Shrivastava and Zeel Shaileshkumar Bhatt},
+                    title = {Flamen - 7 {DOF} Robotic Arm to Manipulate a Spanish Fan},
+                    booktitle = {2018 {IEEE}/{RSJ} International Conference on Intelligent Robots and Systems ({IROS})}
+                  }
+
+            </pre>
+            <div id="bib-publication">
+                <div class="bibchart-container">
+                    <div class="bibchart">
+                        
+                    </div>
+                </div>
+                <div class="legend">
+    
+                </div>
+                <div class="table-responsive limit-vertical text-small">
+                    <table class="table"></table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Change the "visualization" parameter to enable or disable the graph.
+        bibtexify("#bibtex", "bib-publication", {"visualization": true});
+    </script>
 
     <!--Affiliations-->
     <section class="page-section">
