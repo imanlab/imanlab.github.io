@@ -218,6 +218,10 @@ section.page-section .section-subheading {
 
 /* PORTFOLIO */
 
+.portfolio-item.rounded img, .portfolio-item.rounded .portfolio-link, .portfolio-item.rounded .portfolio-hover {
+    border-radius: 1rem;
+}
+
 .portfolio .portfolio-item .portfolio-link {
     position: relative;
     display: block;
