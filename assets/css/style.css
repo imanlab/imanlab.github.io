@@ -6,8 +6,9 @@
      * Change them here to affect the entire style.
      */
     --color-black: #222222;
-    --color-whitish: #F9F9F9;
-    --color-primary: #346beb;
+    --color-whitish: #FCFCFC;
+    --color-primary: #3e68d0; /* #3F6CDE; */
+    --color-primary-light: #718fd3; /* #668AE5; */
     --color-secondary: #ffc800;
     --font-family-roboto: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-montserrat: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -377,7 +378,7 @@ section.page-section .section-subheading {
 }
 
 .business-card a {
-    color: var(--color-primary);
+    color: var(--color-primary-light);
 }
 
 .business-card a:hover {
@@ -432,7 +433,7 @@ footer {
 }
 
 footer a {
-    color: var(--color-primary);
+    color: var(--color-primary-light);
 }
 
 footer a:hover {
