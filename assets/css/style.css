@@ -372,6 +372,7 @@ section.page-section .section-subheading {
     color: var(--color-whitish);
     padding: 2rem;
     border-radius: 2rem;
+    word-break: break-all;
 
     /* Slightly change font size to adapt to the screen size. */
     font-size: clamp(0.9rem, 2vw, 1rem);
