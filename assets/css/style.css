@@ -5,8 +5,10 @@
      * These are glboal variables, used in various elements.
      * Change them here to affect the entire style.
      */
-    --color-black: #222222;
-    --color-whitish: #FCFCFC;
+    --color-black-rgb: 34, 34, 34;
+    --color-black: rgb(var(--color-black-rgb));
+    --color-whitish-rgb: 252, 252, 252;
+    --color-whitish: rgb(var(--color-whitish-rgb));
     --color-primary: #3e68d0; /* #3F6CDE; */
     --color-primary-light: #718fd3; /* #668AE5; */
     --color-secondary: #ffc800;
@@ -421,6 +423,49 @@ section.page-section .section-subheading {
 .business-card .social {
     display: flex;
     justify-content: space-around;
+}
+
+
+
+
+/* CAROUSEL */
+
+
+.carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.carousel-dark .carousel-caption.fill-bg {
+    background-color: var(--color-black);
+    color: var(--color-whitish);
+}
+
+.carousel-light .carousel-caption.fill-bg {
+    background-color: var(--color-whitish);
+    color: var(--color-black);
+}
+
+@media (min-width: 768px) {
+    .carousel-caption {
+        position: absolute;
+        top: unset;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-bottom: 2.5rem;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .carousel-dark .carousel-caption.fill-bg {
+        background-color: rgba(var(--color-black-rgb), .8);
+    }
+
+    .carousel-light .carousel-caption.fill-bg {
+        background-color: rgba(var(--color-whitish-rgb), .8);
+    }
 }
 
 
