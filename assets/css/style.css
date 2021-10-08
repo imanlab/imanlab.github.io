@@ -147,7 +147,7 @@ header.masthead {
      * Blend with black (0, 0, 0) to darken the image, blend with white (255, 255, 255) to lighten it.
      * Change the alpha value (fourth number) from 0 to 1 to control the strength of the darkening/lightening.
      */
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/assets/img/setup.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("/assets/img/setup.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: left;
