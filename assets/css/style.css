@@ -118,7 +118,14 @@ nav.navbar .navbar-nav a.nav-link {
 
 nav.navbar .navbar-nav a.nav-link:hover {
     color: var(--color-secondary);
-    transform: scale(1.17)
+    transform: scale(1.17);
+    transform-origin: center left;
+}
+
+@media (min-width: 768px) {
+    nav.navbar .navbar-nav a.nav-link:hover {
+        transform-origin: unset;
+    }
 }
 
 nav.navbar .navbar-brand {
