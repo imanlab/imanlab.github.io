@@ -367,6 +367,62 @@ section.page-section .section-subheading {
 
 
 
+/* TESTIMONIALS */
+.testimonial.card {
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial blockquote {
+    margin-bottom: 1em;
+}
+
+.testimonial blockquote::before {
+    content: "“"
+}
+
+.testimonial blockquote::after {
+    content: "”"
+}
+
+.testimonial .source {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.testimonial .source .name {
+    text-align: center;
+}
+
+.testimonial .source .qualification {
+    text-align: center;
+    font-style: italic;
+}
+
+.testimonial img {
+    width: 30%;
+    margin: 0 !important;
+}
+
+.extended-testimonial .float-start{
+    width: 30%;
+    max-width: 15em;
+    margin-right: 1em;
+}
+
+.extended-testimonial img{
+    width: 100%;
+}
+
+.extended-testimonial .translate {
+    color: var(--color-primary);
+}
+
+
+
+
 /* BUSINESS CARD */
 
 .business-card-container {
