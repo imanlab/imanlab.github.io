@@ -90,125 +90,134 @@
 
     <section>
         <h1>Fundamental Research (D1)</h1>
-       
-    <div>
-        We aim at making robotic system autonomous and bring them in real world environments and solve real-world
-        problems.
-        Since legislation is one of the key barriers to doing so, we also work on the development of novel teleoperation
-        systems to assist the human operator during complex teleoperation tasks (robotic surgery, nuclear sort and
-        segregation). This makes teleoperation a much easier and cheaper solution allowing more penetration of robotic
-        technologies in the market.
-    </div>
-    <ul>
 
-        <li> How best to enable a robot to learn movements plan based on sensory information without
-            hand-designed features?
-
-        <li> How can a robot learn the motion control for complex interactive tasks?
-
-        <li> How best we can reduce the cognitive workload on a human operator (e.g., a surgeon) during
-            teleoperation by intelligent systems?
-    </ul>
-
-
-
-    From theoretical point of view, my research focuses on:
-    <ol>
-
-        <li> Data driven motion planning and control (presented in Sanni 2022; and Mandil 2022 papers; and
-            Tafuro 2022; and Bonvicini 2022 submissions)
-
-        <li> Robot learning from demonstrations (Ghalamzan 2015, Ghalamzan 2018 and Osa 2017)
-
-        <li> Haptic enabled teleoperation and &nbsp;--<b>Best Paper Award</b> Finalist at IEEE CASE 2020 (Parsa 2020);
-
-        <li> Grasping and manipulation planning/control and -- <b>Best Interactive Paper Award</b> Finalist at
-            IEEE Humanoids 2016 (Mavrakis 2016))
-
-        <li> Robot Perception (Tafuro ICRA 2022);
-    </ol>
-
-
-    <div>
-        <h2>Robot Learning from Demonstrations (LfD)</h2> LfD is key to bring robots to human workspaces at scale. It
-        also
-        can help reduce programming time and cost so that non-experts can easily programme a robot for different tasks.
-        The links between robot and human LfD (Ghalamzan 2015 Incremental and Ghalamzan 2018} demonstrates the available
-        technologies are far away from the corresponding human capabilities of learning from observations. We have been
-        working on developing LfD approaches for a wide range of applications, e.g. Breast Cancer Examination robot
-        (Sanni 2022), strawberry picking (Alessandra 2022), simple pick-and-place (Ghalamzan 2015 incremental and
-        Ghalamzan 2018) and nuclear sort and segregation (Osa 2017 guiding). We are keen to develop fundamental concepts
-        to make LfD available for non-expert users across several application domains.
-    </div>
-    <div>
-        <h2>Data-driven predictive models (DPM)</h2>: Most manipulation tasks involve interaction with environments.
-        These interactions are always challenging to model via classical approaches; hence, they are complicated to
-        control. We are interested in developing data-driven predictive forward models that can help a robot to interact
-        with its environment. For instance, Nazari et al. 2021 and Willow et al. 2022 present action conditioned
-        predictive models for tactile sensors. DPM can be used for, e.g., robust object manipulation by slip
-        avoidance controller via model predictive control (MPC). It can be also used for cluster manipulation for
-        picking up an object on the shelf or strawberry picking (Mghames et al. 2020). Predictive models are a core part
-        of a robust interactive robotic task.
-    </div>
-    <div>
-        <h2>Reduced cognitive load teleoperation</h2> Fully teleoperated robotic systems are the sole solutions to
-        many problems, e.g. from robotic surgery to nuclear sort & segregation. These conservative industries do not
-        trust a fully autonomous system even if such a system is available and needs a human operator to be in charge of
-        the task execution. We worked on a new technology of shared control which can bridge the gap between autonomous
-        systems and fully teleoperated systems. We proposed to use haptic force cues as a means to guide human
-        operators. The guidance in teleoperation can provide a human operator with optimal actions in using a surgical
-        robot (Selvaggio et al. 2019) or predicted singularities (Ghalamzan et al. 2017}, and collision (Parsa et al.
-        2020} and minimum required torques (Rahal et al. 2022). Haptic guidance is important in reducing the cognitive
-        workload (Talha et al. 2016). Motion scaling is also a factor in reducing the cognitive workload (Parsa et al.
-        2022). We envisage an Intelligent Tele-operation System benefiting from Intelligent Autonomous System via haptic
-        guidance or adaptive motion scaling. That can increase the penetration of robotic technologies in the market and
-        make them cheaper solutions, e.g. it can significantly reduce the operation time of robotic surgery.
-    </div>
-
-
-    <div>
-        <h2>Robotic grasping and manipulation</h2> Our work in grasping and manipulation is manifold: <b>(1)</b>
-        task-informed grasping (TIG); <b>(2)</b> Motion planning; <b>(3)</b> Motion Control. The common practice of
-        robotic grasping
-        includes an intelligent system extracting grasp related features from RGB-D images. This alone is not enough for
-        effective and robust robotic grasping as the synthesised grasp may not be good enough for a specific
-        manipulator. Task-informed grasping considers robot specific objectives into consideration in selecting the
-        grasp poses. Hence, the robot can predict the consequences of the grasp actions (e.g. singularity (Ghalamzan et
-        al. 2016), torques (Mavrakis et al. 2016), torques (Mavrakis et ai. 2017), collision (Pardi et al. 2018) and
-        affordance (Pardi et al. 2021) during the planned manipulative movements of a follower manipulator.
-
-        We also work on motion planning for interactive for interactive robotic manipulation motion planning and control
-        are needed. For effective motion planning for robotic cutting, one should define the robot movements based on
-        the surface of the object to be cut (Pardi et al. 2020). For robotic breast palpation (to localise the cancerous
-        lumps) motion control and searching policy, such as RL, are required (Giorgo et al. 2022).
-    </div>
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="/assets/js/bib-list-min.js"></script>
-    <link href="/assets/css/bib-list.css" rel="stylesheet" type="text/css">
-    <style>
-        /* Use this values to change the size of each publication item in the graph for this page only. */
-        :root {
-            --min-pub-width: 60px;
-            --max-pub-width: 100px;
-            --pub-height: 12px;
-        }
-    </style>
-    <section class="page-section alternate-bg">
-        <div class="heading-container text-center">
-            <h2 class="section-heading text-uppercase">Related Publications</h2>
-            <h3 class="section-subheading text-muted">Published by IML members
-            </h3>
+        <div>
+            We aim at making robotic system autonomous and bring them in real world environments and solve real-world
+            problems.
+            Since legislation is one of the key barriers to doing so, we also work on the development of novel
+            teleoperation
+            systems to assist the human operator during complex teleoperation tasks (robotic surgery, nuclear sort and
+            segregation). This makes teleoperation a much easier and cheaper solution allowing more penetration of
+            robotic
+            technologies in the market.
         </div>
-        <div class="container">
-            <pre id="bibtex">
+        <ul>
+
+            <li> How best to enable a robot to learn movements plan based on sensory information without
+                hand-designed features?
+
+            <li> How can a robot learn the motion control for complex interactive tasks?
+
+            <li> How best we can reduce the cognitive workload on a human operator (e.g., a surgeon) during
+                teleoperation by intelligent systems?
+        </ul>
+
+
+
+        From theoretical point of view, my research focuses on:
+        <ol>
+
+            <li> Data driven motion planning and control (presented in Sanni 2022; and Mandil 2022 papers; and
+                Tafuro 2022; and Bonvicini 2022 submissions)
+
+            <li> Robot learning from demonstrations (Ghalamzan 2015, Ghalamzan 2018 and Osa 2017)
+
+            <li> Haptic enabled teleoperation and &nbsp; (Parsa et al. 2020--<b>Best Paper Award</b> Finalist at IEEE
+                CASE 2020, Parsa et al. 2022, Ghalamzan et al. 2017 and Selvagio et al. 2019);
+
+            <li> Grasping and manipulation planning/control (Mavrakis et al. 2016--<b>Best Interactive Paper Award</b>
+                Finalist at
+                IEEE Humanoids 2016, Mavrakis et al. 2017, Ghalamzan et al. 2016, Pardi et al. 2018 and 2021),
+
+            <li> Robot Perception (Tafuro ICRA 2022);
+        </ol>
+
+        <!-- <div id="lfd"></div> -->
+
+        <section class="page-section alternate-bg" id="lfd">
+            <h2>Robot Learning from Demonstrations (LfD)</h2> LfD is key to bringing robots to human workspaces at
+            scale. It also can help reduce programming time and cost so that non-experts can easily programme a robot
+            for different tasks. The links between robot and human LfD (Ghalamzan 2015 Incremental and Ghalamzan 2018}
+            demonstrate the available technologies are far away from the corresponding human capabilities of learning
+            from observations. We have been working on developing LfD approaches for a wide range of applications, e.g.
+            Breast Cancer Examination robot (Sanni 2022), Strawberry picking (Alessandra 2022), simple pick-and-place
+            (Ghalamzan 2015 incremental and Ghalamzan 2018) and nuclear sort and segregation (Osa 2017 guiding). We are
+            keen to develop fundamental concepts to make LfD available for non-expert users across several application
+            domains.
+        </section>
+        <section class="page-section alternate-bg" id="ddpm">
+            <h2>Data-driven predictive models (DPM)</h2>: Most manipulation tasks involve interaction with environments.
+            These interactions are always challenging to the model via classical approaches; hence, they are complicated
+            to control. We are interested in developing data-driven predictive forward models that can help a robot to
+            interact with its environment. For instance, Nazari et al. 2021 and Willow et al. 2022 present action
+            conditioned predictive models for tactile sensors. DPM can be used for, e.g., robust object manipulation by
+            slip avoidance controller via model predictive control (MPC). It can be also used for cluster manipulation
+            for picking up an object on the shelf or strawberry picking (Mghames et al. 2020). Predictive models are a
+            core part of a robust interactive robotic task.
+        </section>
+        <section class="page-section alternate-bg" id="teleoperation">
+            <h2>Reduced cognitive load teleoperation</h2> Fully teleoperated robotic systems are the sole solutions to
+            many problems, e.g. from robotic surgery to nuclear sort & segregation. These conservative industries do not
+            trust a fully autonomous system even if such a system is available and needs a human operator to be in
+            charge of the task execution. We worked on a new technology of shared control which can bridge the gap
+            between autonomous systems and fully teleoperated systems. We proposed to use haptic force cues as a means
+            to guide human operators. The guidance in teleoperation can provide a human operator with optimal actions in
+            using a surgical robot (Selvaggio et al. 2019) or predicted singularities (Ghalamzan et al. 2017}, and
+            collision (Parsa et al. 2020} and minimum required torques (Rahal et al. 2022). Haptic guidance is important
+            in reducing the cognitive workload (Talha et al. 2016). Motion scaling is also a factor in reducing the
+            cognitive workload (Parsa et al. 2022). We envisage an Intelligent Tele-operation System benefiting from
+            Intelligent Autonomous System via haptic guidance or adaptive motion scaling. That can increase the
+            penetration of robotic technologies in the market and make them cheaper solutions, e.g. it can significantly
+            reduce the operation time of robotic surgery.
+        </section>
+        <section class="page-section alternate-bg" id="rgm">
+            <h2>Robotic grasping and manipulation</h2> Our work in grasping and manipulation is manifold: <b>(1)</b>
+            task-informed grasping (TIG); <b>(2)</b> Motion planning; <b>(3)</b> Motion Control. The common practice of
+            robotic grasping includes an intelligent system extracting grasp related features from RGB-D images. This
+            alone is not enough for effective and robust robotic grasping as the synthesised grasp may not be good
+            enough for a specific manipulator. Task-informed grasping considers robot specific objectives into
+            consideration in selecting the grasp poses. Hence, the robot can predict the consequences of the grasp
+            actions (e.g. singularity (Ghalamzan et al. 2016), torques (Mavrakis et al. 2016), torques (Mavrakis et al.
+            2017), collision (Pardi et al. 2018) and affordance (Pardi et al. 2021) during the planned manipulative
+            movements of a follower manipulator.
+
+            We also work on motion planning for interactive robotic manipulation motion planning and control are needed.
+            For effective motion planning for robotic cutting, one should define the robot movements based on the
+            surface of the object to be cut (Pardi et al. 2020). For robotic breast palpation (to localise the cancerous
+            lumps) motion control and searching policy, such as RL, are required (Giorgo et al. 2022).
+        </section>
+
+
+        <section class="page-section alternate-bg" id="MP">
+            <h2>Manipulation Perception</h2> Our work in Manipulation Perception is manifold: <b>(1)</b> Strawberry
+            detection-segmentation and picking point localisation; <b>(2)</b> Active Perception; <b>(3)</b> Tactile
+            Perception. We work on Detection, Segmentation, and Localisation for robotic grasping, and fruit picking
+            (Tafuro et al. 2022).
+
+            We also work on Active Perception which allows a robot to take action to optimise the perception
+            performaence. We also use tactile sensors for the robot to make the robot aware of the interction states.
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="/assets/js/bib-list-min.js"></script>
+        <link href="/assets/css/bib-list.css" rel="stylesheet" type="text/css">
+        <style>
+            /* Use this values to change the size of each publication item in the graph for this page only. */
+            :root {
+                --min-pub-width: 60px;
+                --max-pub-width: 100px;
+                --pub-height: 12px;
+            }
+        </style>
+        <section class="page-section alternate-bg">
+            <div class="heading-container text-center">
+                <h2 class="section-heading text-uppercase">Related Publications</h2>
+                <h3 class="section-subheading text-muted">Published by IML members
+                </h3>
+            </div>
+            <div class="container">
+                <pre id="bibtex">
                 @article{giorgo2022,
                     title={Deep Movement Primitives and control policy for breast cancer examination robot},
                     author={Bonvicini, Giorgio and Sprida, Venkatesh and Zanchettin, Andrea and Ghalamzan, Amir},
@@ -463,25 +472,25 @@
                     chapter   = "10"
                 }
             </pre>
-            <div id="bib-publication">
-                <div class="bibchart-container">
-                    <div class="bibchart">
+                <div id="bib-publication">
+                    <div class="bibchart-container">
+                        <div class="bibchart">
+
+                        </div>
+                    </div>
+                    <div class="legend">
 
                     </div>
-                </div>
-                <div class="legend">
-
-                </div>
-                <div class="table-responsive limit-vertical text-small">
-                    <table class="table"></table>
+                    <div class="table-responsive limit-vertical text-small">
+                        <table class="table"></table>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <script>
-        // Change the "visualization" parameter to enable or disable the graph.
-        bibtexify("#bibtex", "bib-publication", { "visualization": true });
-    </script>
+        </section>
+        <script>
+            // Change the "visualization" parameter to enable or disable the graph.
+            bibtexify("#bibtex", "bib-publication", { "visualization": true });
+        </script>
 
 
 
