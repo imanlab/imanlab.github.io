@@ -7,3 +7,5 @@ Documentation regarding how to manage the domain, how to edit content on the web
 <p align="center">
   <img src="/assets/img/logos/iml_square.png" alt="IML logo" />
 </p>
+
+<!-- https://looka.com/editor/88384721 -->
