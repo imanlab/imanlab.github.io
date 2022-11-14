@@ -139,7 +139,7 @@ nav.navbar .navbar-brand {
 /* HEADER */
 
 header.masthead {
-    padding-top: 10.5rem;
+    padding-top: 0.5rem;
     padding-bottom: 3rem;
     text-align: center;
     color: var(--color-whitish);
@@ -147,7 +147,8 @@ header.masthead {
      * Blend with black (0, 0, 0) to darken the image, blend with white (255, 255, 255) to lighten it.
      * Change the alpha value (fourth number) from 0 to 1 to control the strength of the darkening/lightening.
      */
-    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("/assets/img/setup.jpg");
+    /*  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, .4)), url("/assets/img/front112022_02.pdf");*/
+    background-image: url("/assets/img/front112022_02.pdf");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: left;
