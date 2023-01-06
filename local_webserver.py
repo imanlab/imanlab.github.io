@@ -30,3 +30,5 @@ if __name__ == '__main__':
         port = sys.argv[1]
     
     http.server.test(HandlerClass=NoCacheHTTPRequestHandler, port=port)
+
+# on the browser open http://localhost:8000/
