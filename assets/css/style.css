@@ -140,8 +140,26 @@ nav.navbar .navbar-brand {
 
 header.masthead {
     padding-top: 8rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0rem; /* Adjusted to remove padding from the bottom */
     margin-top: -7cm;
+    margin-bottom: -2cm;
+    background-position: top center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    text-align: center;
+    height: calc(99vh - 1.5cm); /* Adjusted to subtract 2cm from the height */
+    color: var(--color-whitish);
+    background-image: url("/assets/img/front112022.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: left;
+    background-size: cover;
+}
+
+/* header.masthead {
+    padding-top: 8rem;
+    padding-bottom: -2rem;
+    margin-top: -8cm;
     margin-bottom: -2cm;
     background-position: top center;
     background-size: 100% 100%;
@@ -153,13 +171,13 @@ header.masthead {
      * Blend with black (0, 0, 0) to darken the image, blend with white (255, 255, 255) to lighten it.
      * Change the alpha value (fourth number) from 0 to 1 to control the strength of the darkening/lightening.
      */
-    /*  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, .4)), url("/assets/img/front112022_02.pdf");*/
+    /* background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, .4)), url("/assets/img/front112022.jpg"); */
     background-image: url("/assets/img/front112022.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: left;
     background-size: cover;
-}
+} */
 
 
 @media (min-width: 768px) {
