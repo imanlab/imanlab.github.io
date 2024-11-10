@@ -139,12 +139,12 @@ nav.navbar .navbar-brand {
 /* HEADER */
 
 header.masthead {
-    padding-top: 8rem;
+    padding-top: 4rem;
     padding-bottom: 0rem; /* Adjusted to remove padding from the bottom */
     margin-top: -7cm;
     margin-bottom: -2cm;
     background-position: top center;
-    background-size: 100% 100%;
+    background-size: 50% 50%;
     background-attachment: fixed;
     text-align: center;
     height: calc(99vh - 1.5cm); /* Adjusted to subtract 2cm from the height */
@@ -234,11 +234,11 @@ section.page-section {
 }
 
 .heading-container {
-    margin: 5rem 0 4rem 0;
+    margin: 1.5rem 0 1rem 0;
 }
 
 section.page-section .section-heading {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 section.page-section .section-subheading {
@@ -301,8 +301,11 @@ section.page-section .section-subheading {
 }
 
 
+/* Team */
 
-
+.team-image {
+    width: 50%;
+}
 
 /* PEOPLE */
 
